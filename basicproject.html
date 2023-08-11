@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mala xianguo</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+        border: 1px solid blueviolet;
+        padding: 15px;
+        font-size: 18px;
+        border-radius: 4px;
+      }
+      img {
+        display: block;
+        max-width: 90%;
+        margin: 0 auto;
+        border-radius: 10px;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 20px;
+        margin: 20 0 10px;
+        text-align: center;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        background: linear-gradient(
+          to right,
+          rgb(182, 244, 146),
+          rgb(51, 139, 147)
+        );
+        color: black;
+        font-size: 24px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+        color: brown;
+        background-color: black;
+      }
+      a {
+        text-decoration: none;
+      }
+      .container {
+        max-width: 600px, margin o auto;
+        padding: 15px 60px;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>I love malaxianguo</h1>
+      <h2>Especially original bomb soup</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/605/original/mala_image.jpeg?1689238665"
+        alt="malaxianguo"
+      />
+      <p>
+        Mala xiang guo was introduced by the Burmese Chinese people to Myanmar,
+        and is now a popular dish there, where it is called mala shan gaw Mala
+        xiang guo, roughly translated into English as "spicy stir-fry hot pot",
+        is a Chinese dish prepared by stir frying. Strongly flavored with mala,
+        it often contains meat and vegetables, and has a salty and spicy
+        taste<br />
+        <a href="https://en.wikipedia.org/wiki/Mala_xiang_guo" target="_blank"
+          >Learn more on wikipedia</a
+        >
+      </p>
+      <button>Try Mala_xiang_guo</button>
+      <script>
+        function tryUs() {
+          let name = prompt("Waht is your name?");
+          let phone = prompt("What is your phone number?");
+          let food = prompt("What kind of food would you like to try?");
+          let heading = document.querySelector("h1");
+          if (food === "pork") {
+            heading.innerHTML =
+              "Nice choice!🥰" +
+              name +
+              " " +
+              "Don't forget to check your phone." +
+              " " +
+              "Thank You.";
+          } else {
+            heading.innerHTML =
+              "That's great!🥰" +
+              name +
+              " " +
+              "Don't forget to check your phone." +
+              " " +
+              "Thank You.";
+          }
+        }
+        let tryButton = document.querySelector("button");
+        tryButton.addEventListener("click", tryUs);
+      </script>
+    </div>
+  </body>
+</html>

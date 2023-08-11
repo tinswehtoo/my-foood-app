@@ -1,0 +1,50 @@
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+  border: 1px solid blueviolet;
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 4px;
+}
+img {
+  display: block;
+  max-width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 20px;
+  margin: 20 0 10px;
+  text-align: center;
+}
+button {
+  display: block;
+  margin: 0 auto;
+  background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+  color: black;
+  font-size: 24px;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px;
+  transition: all 200ms ease-in-out;
+}
+button:hover {
+  opacity: 0.9;
+  cursor: pointer;
+  color: brown;
+  background-color: black;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 600px, margin o auto;
+  padding: 15px 60px;
+}
+a:hover {
+  text-decoration: underline;
+}
